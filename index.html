@@ -7,22 +7,55 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Carousel Slider</title>
   <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <div>
     <div class="slide">
-      <video loop autoplay>
-          <source src="./Resources/airbnb.mp4" type="video/mp4">
-      </video>
+        <div class="text">
+            <h1 class="title">
+                Slider Title<br/>
+                Goes here!
+            </h1>
+            <h2 class="subtitle">
+                Subtitle would go here.
+                <span class="glyphicon arrow glyphicon-download"></span>
+            </h2>
+        </div>
+        <video loop autoplay oncanplay="$(this)[0].play()">
+            <source src="./Resources/airbnb.mp4" type="video/mp4">
+        </video>
     </div>
     <div class="slide"> 
-        <video loop autoplay>
+        <div class="text">
+            <h1 class="title">
+                Slider Title<br/>
+                Goes here!
+            </h1>
+            <h2 class="subtitle">
+                Subtitle would go here.
+                <span class="glyphicon arrow glyphicon-download"></span>
+            </h2>
+        </div>
+        <video loop autoplay oncanplay="$(this)[0].play()">
             <source src="./Resources/bg-cover-new.mp4" type="video/mp4">
         </video>
     </div>
     <div class="slide">
-        <video loop autoplay>
+        <div class="text">
+            <h1 class="title">
+                Slider Title<br/>
+                Goes here!
+            </h1>
+            <h2 class="subtitle">
+                Subtitle would go here.
+                <span class="glyphicon arrow glyphicon-download"></span>
+            </h2>
+        </div>
+        <video loop autoplay oncanplay="$(this)[0].play()">
             <source src="./Resources/Anatomy-of-Next-Season-Two.mp4" type="video/mp4">
         </video>
     </div>
