@@ -46,6 +46,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+/* 
+  positioned title by using top and left property on text div,
+  make necessary changes to avoid clutter. 
+*/
 
 .title {
   all: unset;
