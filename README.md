@@ -1,2 +1,2 @@
-# Squaberry_Slider
-Creating slider based on foundersfund.com
+# carousel-slider
+Carousel Slider only used vanilla javascript(no library)
