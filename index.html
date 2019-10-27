@@ -14,7 +14,12 @@
 
 <body>
   <div>
-    <div class="slide">
+    <div style='text-align: right;' class="controls">
+        <span class="dot 1" onclick='currentSlide(1)'></span>
+        <span class="dot 2" onclick='currentSlide(2)'></span>
+        <span class="dot 3" onclick='currentSlide(3)'></span>
+    </div>
+    <div class="slide" id="1">
         <div class="text">
             <h1 class="title">
                 Slider Title<br/>
@@ -22,14 +27,14 @@
             </h1>
             <h2 class="subtitle">
                 Subtitle would go here.
-                <span class="glyphicon arrow glyphicon-download"></span>
+                
             </h2>
         </div>
         <video loop autoplay oncanplay="$(this)[0].play()">
             <source src="./Resources/airbnb.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="slide"> 
+    <div class="slide" id="2"> 
         <div class="text">
             <h1 class="title">
                 Slider Title<br/>
@@ -44,7 +49,7 @@
             <source src="./Resources/bg-cover-new.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="slide">
+    <div class="slide" id="3">
         <div class="text">
             <h1 class="title">
                 Slider Title<br/>

@@ -25,3 +25,13 @@ const slide = () => {
 }
 slide();
 setInterval(slide, 7500);
+
+const SlideControls = () => {
+  const active = document.querySelector('.showing');
+  if(document.getElementById('1').classList.contains('showing')){
+    const one = document.getElementsByClassName('1');
+    one
+    .classList
+    .add('active');
+  }
+}
