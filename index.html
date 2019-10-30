@@ -11,14 +11,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-
 <body>
   <div>
+    <!-- Slide Pointers -->
     <div style='text-align: right;' class="controls">
-        <span class="dot first" onclick='goToSlide(this)'></span>
-        <span class="dot second" onclick='goToSlide(this)'></span>
-        <span class="dot third" onclick='goToSlide(this)'></span>
+        <span class="dot first" onclick='goToSlide(1)'></span>
+        <span class="dot second" onclick='goToSlide(2)'></span>
+        <span class="dot third" onclick='goToSlide(3)'></span>
     </div>
+
+    <!-- Slide One -->
     <div class="slide" id="first">
         <div class="text">
             <h1 class="title">
@@ -34,6 +36,8 @@
             <source src="./Resources/airbnb.mp4" type="video/mp4">
         </video>
     </div>
+
+    <!-- Slide Two -->
     <div class="slide" id="second"> 
         <div class="text">
             <h1 class="title">
@@ -49,6 +53,8 @@
             <source src="./Resources/bg-cover-new.mp4" type="video/mp4">
         </video>
     </div>
+
+    <!-- Slide Three -->
     <div class="slide" id="third">
         <div class="text">
             <h1 class="title">

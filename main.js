@@ -57,22 +57,37 @@ const SlidePointer = () => {
 SlidePointer();
 setInterval(SlidePointer, 7500);
 
-function goToSlide(elem) {
+function goToSlide(n) {
   const first = document.querySelector('.first');
   const second = document.querySelector('.second');
   const third = document.querySelector('.third');
-  var element = elem;
     // get all 'a' elements
     var showing = document.getElementsByClassName('slide');
+    var pointer = document.getElementsByClassName('dot');
     // loop through all 'a' elements
     for (i = 0; i < showing.length; i++) {
         // Remove the class 'active' if it exists
-        showing[i].classList.remove('showing')
+        showing[i].classList.remove('showing');
     }
+    for (i = 0; i < pointer.length; i++) {
+      // Remove the class 'active' if it exists
+      pointer[i].classList.remove('active');
+  }
     // add 'active' classs to the element that was clicked
-    if(element.classList.contains('first')){
+    if(n==1){
       document.getElementById('first').classList.add('showing');
+      first.classList.add('active');
+    } else if(n==2){
+      document.getElementById('second').classList.add('showing');
+      second.classList.add('active');
+    } else if(n==3){
+      document.getElementById('third').classList.add('showing');
+      third.classList.add('active');
     }
+    // clearInterval(slide);
+    // clearInterval(SlidePointer);
+    // setInterval(slide, 7500);
+    // setInterval(SlidePointer,7500);
 }
 goToSlide();
 
