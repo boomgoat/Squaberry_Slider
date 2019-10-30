@@ -56,3 +56,23 @@ const SlidePointer = () => {
 }
 SlidePointer();
 setInterval(SlidePointer, 7500);
+
+function goToSlide(elem) {
+  const first = document.querySelector('.first');
+  const second = document.querySelector('.second');
+  const third = document.querySelector('.third');
+  var element = elem;
+    // get all 'a' elements
+    var showing = document.getElementsByClassName('slide');
+    // loop through all 'a' elements
+    for (i = 0; i < showing.length; i++) {
+        // Remove the class 'active' if it exists
+        showing[i].classList.remove('showing')
+    }
+    // add 'active' classs to the element that was clicked
+    if(element.classList.contains('first')){
+      document.getElementById('first').classList.add('showing');
+    }
+}
+goToSlide();
+
